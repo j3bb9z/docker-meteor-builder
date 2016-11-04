@@ -9,4 +9,5 @@ RUN curl https://install.meteor.com/ | sh \
 COPY run.sh /opt/
 VOLUME /app /bundle
 
-ENTRYPOINT /opt/run.sh
+ENTRYPOINT ["/opt/run.sh"]
+CMD []
