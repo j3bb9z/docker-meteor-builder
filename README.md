@@ -15,4 +15,4 @@ additional arguments may be given and are forwarded to `meteor build`.
 
 Use these to specify options like `--server`:
 
-    docker run -v /path/to/app:/opt/app -v /path/to/output:/opt/bundle risetechnologies/meteor-builder --server=http://localhost:3000
+    docker run -v /path/to/app:/opt/app -v /path/to/output:/opt/bundle risetechnologies/meteor-builder --server-only --server=http://localhost:3000
