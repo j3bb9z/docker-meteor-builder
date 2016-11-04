@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /opt/app
+cd /app
 
 meteor npm install
-meteor --unsafe-perm build /opt/bundle/ "$@"
+meteor --unsafe-perm build /bundle/ "$@"
