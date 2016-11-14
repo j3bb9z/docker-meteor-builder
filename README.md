@@ -14,10 +14,16 @@ Usage
       --volume /path/to/output:/bundle \
       risetechnologies/meteor-builder
 
-Additional arguments may be given and are forwarded to `meteor build`. It is recommended to use `--directory`
-and use the output like that if possible, or compress on the host system to increase performance dramatically.
+The default build command is set as
 
-    docker run -v /path/to/app:/app -v /path/to/output:/bundle risetechnologies/meteor-builder --server-only  --directory
+    meteor --unsafe-perm build --server-only --directory /bundle
+
+The command can be overwritten by specifying another.
+`meteor npm install` will always be run before the command.
+It is recommended to use `--directory` and use the output like that if possible,
+or compress on the host system to increase performance dramatically.
+
+    docker run -v /path/to/app:/app -v /path/to/output:/bundle risetechnologies/meteor-builder meteor build --directory /bundle
 
 ### Versioning
 
