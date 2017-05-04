@@ -1,8 +1,8 @@
-FROM node:4.8.1
+FROM node:4.8.2
 
 MAINTAINER risetechnologies
 
-RUN curl https://install.meteor.com/?release=1.4.4.1 | sh \
+RUN curl https://install.meteor.com/?release=1.4.4.2 | sh \
   && apt-get update \
   && apt-get install -y build-essential g++
 
