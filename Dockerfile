@@ -1,4 +1,4 @@
-FROM node:8.9.4
+FROM buildpack-deps:jessie
 
 MAINTAINER risetechnologies
 
